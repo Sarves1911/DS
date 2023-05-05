@@ -1,16 +1,11 @@
 #include<stdio.h>
-
-
 struct student{
     int roll_no;
     char name[100];
-
-    
-
 };
 
-
-int main(){
+int main()
+{
 
     int size;
     int swaps=0;
@@ -39,23 +34,15 @@ int main(){
             swaps++;
 
         }
-        
-
         }
-        
-    }
-
-
+       }
+    
     printf("\nDetails of all students:\n");
-    for (int i = 0; i < size; i++) {
-        
+    for (int i = 0; i < size; i++)
+    {        
         printf("Name: %s\n", students[i].name);
         printf("Roll Number: %d\n", students[i].roll_no);
     }
-
     printf("Number of swaps performed %d ",swaps);
-    
-    
-
     return 0;
 }
